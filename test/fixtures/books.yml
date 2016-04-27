@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  inbn: MyString
+  title: MyString
+  price: 1
+  publish: MyString
+  published: 2016-04-27
+  cd: false
+
+two:
+  inbn: MyString
+  title: MyString
+  price: 1
+  publish: MyString
+  published: 2016-04-27
+  cd: false
