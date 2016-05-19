@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Country</th>
       <th>Isbn</th>
       <th>Title</th>
       <th>Price</th>
@@ -18,7 +19,8 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
-        <td><%= book.isbn %></td>
+        <td><%="日本" %></td>
+        <td><%= book.inbn %></td>
         <td><%= book.title %></td>
         <td><%= book.price %></td>
         <td><%= book.publish %></td>
