@@ -14,9 +14,7 @@ class BooksController < ApplicationController
 
   # GET /books/new
   def new
-    @book = Book.new
-    @book.price = 0
-    @book.cd = 1
+    @book = Book.new(price: 0, cd: 1)
   end
 
   # GET /books/1/edit
