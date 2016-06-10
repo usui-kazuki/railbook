@@ -1,0 +1,42 @@
+﻿<h1>View_helper_test</h1>
+
+<br>text_field
+<br><%= text_field :book, :isbn%>
+<br>
+
+<br>number_field
+<br><%= number_field :book, :isbn%>
+<br>
+
+<br>text_area
+<br><%= text_area :book, :memo %>
+<br>
+
+<br>check_box
+<br><%= check_box :book, :cd, {},0,1 %>
+<br>
+
+<br>radio_button
+<br><%= radio_button :user, :color, "red" %>赤
+    <%= radio_button :user, :color, "bule" %>青
+    <%= radio_button :user, :color, "green" %>緑
+<br>
+
+<br>select
+<br><%= select :user, :address, ["出雲","松江","雲南","大田"] %>
+<br>
+
+<br>collection_select
+<br><select id="book_publish" name="book[publish]">
+       <option value="1">集英社</option>
+       <option value="2">講談社</option>
+       <option value="3">一輪車</option>
+    </select>
+<br>
+
+<br>link_to
+<br><%= link_to "Edit",books_path %>
+<br>
+
+<br>image_tag
+<br><%= image_tag "izusho.jpg"%>
