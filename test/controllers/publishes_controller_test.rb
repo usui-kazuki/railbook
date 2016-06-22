@@ -17,7 +17,7 @@ class PublishesControllerTest < ActionController::TestCase
   end
 
   test "should create publish" do
-    assert_difference('Publishe.count') do
+    assert_difference('Publish.count') do
       post :create, publish: { address: @publish.address, publishname: @publish.publishname }
     end
 
@@ -40,7 +40,7 @@ class PublishesControllerTest < ActionController::TestCase
   end
 
   test "should destroy publish" do
-    assert_difference('Publishe.count', -1) do
+    assert_difference('Publish.count', -1) do
       delete :destroy, id: @publish
     end
 

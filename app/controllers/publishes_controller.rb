@@ -4,7 +4,7 @@ class PublishesController < ApplicationController
   # GET /publishes
   # GET /publishes.json
   def index
-    @publishes = Publishe.all
+    @publishes = Publish.all
   end
 
   # GET /publishes/1
@@ -14,7 +14,7 @@ class PublishesController < ApplicationController
 
   # GET /publishes/new
   def new
-    @publish = Publishe.new
+    @publish = Publish.new
   end
 
   # GET /publishes/1/edit
@@ -24,11 +24,11 @@ class PublishesController < ApplicationController
   # POST /publishes
   # POST /publishes.json
   def create
-    @publish = Publishe.new(publish_params)
+    @publish = Publish.new(publish_params)
 
     respond_to do |format|
       if @publish.save
-        format.html { redirect_to @publish, notice: 'Publishe was successfully created.' }
+        format.html { redirect_to @publish, notice: 'Publish was successfully created.' }
         format.json { render :show, status: :created, location: @publish }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PublishesController < ApplicationController
   def update
     respond_to do |format|
       if @publish.update(publish_params)
-        format.html { redirect_to @publish, notice: 'Publishe was successfully updated.' }
+        format.html { redirect_to @publish, notice: 'Publish was successfully updated.' }
         format.json { render :show, status: :ok, location: @publish }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class PublishesController < ApplicationController
   def destroy
     @publish.destroy
     respond_to do |format|
-      format.html { redirect_to publishes_url, notice: 'Publishe was successfully destroyed.' }
+      format.html { redirect_to publishes_url, notice: 'Publish was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -64,7 +64,7 @@ class PublishesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_publish
-      @publish = Publishe.find(params[:id])
+      @publish = Publish.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

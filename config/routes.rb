@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :publishes
+  resources :publishes
+  resources :publishes
   resources :listings
   resources :books do
     post 'search', on: :collection

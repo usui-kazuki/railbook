@@ -1,4 +1,4 @@
-<%= form_for(@publish) do |f| %>
+﻿<%= form_for(@publish) do |f| %>
   <% if @publish.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@publish.errors.count, "error") %> prohibited this publish from being saved:</h2>
@@ -14,10 +14,12 @@
   <div class="field">
     <%= f.label :publishname %><br>
     <%= f.text_field :publishname %>
+    
   </div>
   <div class="field">
     <%= f.label :address %><br>
-    <%= f.text_field :address %>
+    
+    <%= select :publishe, :address,["出雲市","松江市","雲南市"] %>
   </div>
   <div class="actions">
     <%= f.submit %>
