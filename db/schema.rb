@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20160706012524) do
 
   create_table "books", force: :cascade do |t|
-    t.string   "inbn"
+    t.string   "isbn"
     t.string   "title"
     t.integer  "price"
-    t.string   "publish"
+    t.string   "publish_id"
     t.date     "published"
     t.boolean  "cd"
     t.datetime "created_at", null: false
