@@ -24,14 +24,6 @@ ActiveRecord::Schema.define(version: 20160711075334) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "listings", force: :cascade do |t|
-    t.string   "publishe"
-    t.string   "publishname"
-    t.string   "address"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
   create_table "publishes", force: :cascade do |t|
     t.string   "publishname"
     t.string   "address"

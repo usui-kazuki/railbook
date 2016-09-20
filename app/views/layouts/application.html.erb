@@ -8,11 +8,16 @@
 
 </head>
 <body>
+<header>
+<div align="right"><%= "ログインユーザー：#{session[:usrname]}" %>
+<%= link_to "ログアウト" , controller: :login, action: :index%></div>
+</header>
 <%= image_tag "railbook.png" %>
 <ul><li><%= link_to "書籍一覧", books_path %></li>
 <li><%= link_to "出版社一覧", publishes_path %></li>
 <li><%= link_to "レビュー 一覧", reviews_path %></li>
-<li><%= link_to "ユーザー 一覧", users_path %></li>
+<li><%= link_to "ユーザー 一覧", users_path %></li> 
+
 <%= yield %>
 
 </body>

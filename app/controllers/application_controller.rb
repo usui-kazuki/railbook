@@ -18,4 +18,10 @@ class ApplicationController < ActionController::Base
       redirect_to controller: :login,action: :index
     end
   end
+
+  def log_out
+    session.delete(:user.id)
+    @session[:usr] = nil
+    @session[:usrname] = nil
+  end
 end
